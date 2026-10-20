@@ -24,7 +24,7 @@ CyberSafe is a Python-based project focused on building a command-line security 
 
 ## Project Status
 
-Early Development-- In Progress
+Early Development - In Progress
 
 CyberSafe is a learning project focused on improving Python programming skills, code organization, and problem-solving.
 
