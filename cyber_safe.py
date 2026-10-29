@@ -1,19 +1,5 @@
-#=== Cyber Safe ===
+#=== CyberSafe ===
 
-def options():
-    options_fuctions = {
-        1: "This feature is coming soon.",
-        2: "This feature is coming soon.",
-        3: "This feature is coming soon.",
-        4: "This feature is coming soon.",
-        5: "This feature is coming soon.",
-        0: ""
-    }
-    
-    return options_fuctions
-    
-messages = options()
-    
 def menu():
     options_menu = [
         "=== CyberSafe ===\n",
@@ -27,6 +13,79 @@ def menu():
     
     for i in options_menu:
         print(i)
+   
+def password_analizer():
+    password = input("Introduce a password:")
+    
+    def analys(operation, flag):
+        try:
+            return f"Minum {operation}: {flag}"
+        except NameError:
+            return "Variable inexistente"
+    
+    operation = ""
+    flag = "PASS"
+    
+    if len(password) < 12:
+        operation = "(12 caracters)"
+        flag = "FAIL"
+        print(analys(operation, flag))
+        operation = "(12 caracters)"
+        flag = "PASS"
+        print(analys(operation, flag))
+        
+    flag_capital = False
+    flag_lower_case = False
+    flag_digit = False
+    
+    for i in password:
+        if i.isupper():
+            flag_capital = True
+        if i.islower():
+            flag_lower_case = True
+        if i.isdigit():
+            flag_digit = True
+            
+    if not flag_capital:
+        operation = "(a capital)"
+        flag = "FAIL"
+        print(analys(operation,flag))
+    else:
+        operation = "(a capital)"
+        flag = "PASS"
+        print(analys(operation,flag))
+        
+    if not flag_lower_case:
+        operation = "(a lowercase)"
+        flag = "FAIL"
+        print(analys(operation, flag))
+    else:
+        operation = "(a lowercase)"
+        flag = "PASS"
+        print(analys(operation, flag))
+        
+    if not flag_digit:
+        operation = "(a digit)"
+        flag = "FAIL"
+        print(analys(operation, flag))
+    else:
+        operation = "(a digit)"
+        
+        print(analys(operation, flag))
+  
+def options():
+    options_fuctions = {
+        1: password_analizer,
+        2: "This feature is coming soon.",
+        3: "This feature is coming soon.",
+        4: "This feature is coming soon.",
+        5: "This feature is coming soon.",
+        0: ""
+    }
+    
+    return options_fuctions
+    
+messages = options() 
         
 while True:
     menu()
@@ -34,10 +93,17 @@ while True:
         option = int(input("Which option will you choose?:"))
         
         if option in range(1, 6):
-            print(messages[option])
+            try:
+                if option == 1:
+                    messages[option]()
+                else:
+                    print(messages[option])
+            except TypeError:
+                print("Error")
+                
         elif option == 0:
             break
         else:
-            print("That option dosen't exist")
+            print("That option dosen´t exist")
     except ValueError:
         print("Error is not a number")
