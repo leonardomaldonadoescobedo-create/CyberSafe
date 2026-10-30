@@ -1,33 +1,44 @@
 # CyberSafe
 
-CyberSafe is a Python-based project focused on building a command-line security toolkit. This first version establishes the program´s menu, option handling, and basic structure.
+A Python-based cybersecurity toolkit developed as a command-line application. The project is built incrementally to practice Python programming and develop basic cybersecurity tools.
 
 ## Current Features
 
-- Command-line menu
-- Menu options for different tools
-- Dictionary-based option messages
-- Input validation using try/except
-- Basic menu navigation using loops and conditional statements
+- Interactive command-line menu
+- Menu navigation and option handling
+- Password Analyzer:
+  - Password length validation
+  - Uppercase letter detection
+  - Lowercase letter detection
+  - Digit detection
+  - PASS/FAIL results for individual checks
 
 ## Planned Features
 
-- Password Analyzer
 - Text Analyzer
 - Segurito Data Manager
 - Analysis History
-- About CyberSafe
+- Additional security tools
 
 ## Technologies
 
 - Python
 
+## What I practiced
+
+- Functions ('def' and 'return')
+- Lists and dictionaries
+- 'for' and 'while' loops
+- Conditional statements ('if', 'else')
+- Boolean variables ('True' and 'False')
+- String methods ('isupper()', 'islower()', 'isdigit()')
+- F-strings
+- Program structure and organization 
+
 ## Project Status
 
-Early Development - In Progress
+Early Development - Second Progress
 
-CyberSafe is a learning project focused on improving Python programming skills, code organization, and problem-solving.
-
-More features will be added as development progresses.
+CyberSafe is under active development, with new features being added incrementally. Its Password Analyzer evaluates specific password characteristics to establish a basic security assessment. More security modules and improvements will be added as development progresses.
 
 
