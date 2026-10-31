@@ -14,10 +14,10 @@ def menu():
     for i in options_menu:
         print(i)
    
-def password_analizer():
+def password_analyzer():
     password = input("Introduce a password:")
     
-    def analys(operation, flag):
+    def analysis(operation, flag):
         try:
             return f"Minum {operation}: {flag}"
         except NameError:
@@ -29,10 +29,11 @@ def password_analizer():
     if len(password) < 12:
         operation = "(12 caracters)"
         flag = "FAIL"
-        print(analys(operation, flag))
+        print(analysis(operation, flag))
+    else:
         operation = "(12 caracters)"
         flag = "PASS"
-        print(analys(operation, flag))
+        print(analysis(operation, flag))
         
     flag_capital = False
     flag_lower_case = False
@@ -49,33 +50,33 @@ def password_analizer():
     if not flag_capital:
         operation = "(a capital)"
         flag = "FAIL"
-        print(analys(operation,flag))
+        print(analysis(operation,flag))
     else:
         operation = "(a capital)"
         flag = "PASS"
-        print(analys(operation,flag))
+        print(analysis(operation,flag))
         
     if not flag_lower_case:
         operation = "(a lowercase)"
         flag = "FAIL"
-        print(analys(operation, flag))
+        print(analysis(operation, flag))
     else:
         operation = "(a lowercase)"
         flag = "PASS"
-        print(analys(operation, flag))
+        print(analysis(operation, flag))
         
     if not flag_digit:
         operation = "(a digit)"
         flag = "FAIL"
-        print(analys(operation, flag))
+        print(analysis(operation, flag))
     else:
         operation = "(a digit)"
         
-        print(analys(operation, flag))
+        print(analysis(operation, flag))
   
 def options():
     options_fuctions = {
-        1: password_analizer,
+        1: password_analyzer,
         2: "This feature is coming soon.",
         3: "This feature is coming soon.",
         4: "This feature is coming soon.",
