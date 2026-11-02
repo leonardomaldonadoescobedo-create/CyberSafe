@@ -1,24 +1,22 @@
 # CyberSafe
 
-A Python-based cybersecurity toolkit developed as a command-line application. The project is built incrementally to practice Python programming and develop basic cybersecurity tools.
+A Python-based cybersecurity toolkit developed as a command-line application. This project is built incrementally to practice Python programming and develop basic cybersecurity tools.
 
 ## Current Features
 
 - Interactive command-line menu
-- Menu navigation and option handling
 - Password Analyzer:
-  - Password length validation
+  - Minimum password length validation (12 characters)
   - Uppercase letter detection
   - Lowercase letter detection
   - Digit detection
-  - PASS/FAIL results for individual checks
+  - PASS/FAIL results 
 
 ## Planned Features
 
-- Text Analyzer
 - Segurito Data Manager
 - Analysis History
-- Additional security tools
+- About CyberSafe
 
 ## Technologies
 
@@ -27,18 +25,19 @@ A Python-based cybersecurity toolkit developed as a command-line application. Th
 ## What I practiced
 
 - Functions ('def' and 'return')
-- Lists and dictionaries
+- Lists and dictionaries containing function references 
 - 'for' and 'while' loops
-- Conditional statements ('if', 'else')
-- Boolean variables ('True' and 'False')
-- String methods ('isupper()', 'islower()', 'isdigit()')
+- Conditional statements ('if', 'elif', 'else')
+- Boolean variables
+- String methods ('split()', 'isalpha()', 'isupper()', 'islower()', 'isdigit()')
+- Generation expressions
+- 'sum()'
+- Input validation using 'try/except'
 - F-strings
-- Program structure and organization 
+- Basic program structure and organization 
 
 ## Project Status
 
-Early Development - Second Progress
+Early Development - Third Progress
 
-CyberSafe is under active development, with new features being added incrementally. Its Password Analyzer evaluates specific password characteristics to establish a basic security assessment. More security modules and improvements will be added as development progresses.
-
-
+CyberSafe is under active development. Its current modules include a Password Analyzer and a Text Analyzer, providing basic password checks and text statistics. Additional modules and improvements will b added incrementally.
