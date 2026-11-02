@@ -10,7 +10,15 @@ A Python-based cybersecurity toolkit developed as a command-line application. Th
   - Uppercase letter detection
   - Lowercase letter detection
   - Digit detection
-  - PASS/FAIL results 
+  - PASS/FAIL results
+- Text Analyzer:
+  - Character counter
+  - Word counter
+  - Letter counter
+  - Uppercase letter counter
+  - Lowercase letter counter
+  - Digit counter
+  
 
 ## Planned Features
 
