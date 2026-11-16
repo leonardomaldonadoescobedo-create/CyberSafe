@@ -1,6 +1,3 @@
-import sys
-print(sys.version)   
-
 #=== CyberSafe ===
 
 def menu():
